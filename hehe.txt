@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For Fatima — From Wahab</title>
+  <meta name="description" content="A little website from Wahab to Fatima." />
+  <meta name="theme-color" content="#fde2e4" />
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">❤️</text></svg>' />
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background: #fff7f9; color: #333; }
+    .wrap { max-width: 800px; margin: auto; padding: 20px; }
+    .cta { background: linear-gradient(90deg, #ff6b6b, #ff8e8e); color: white; border: none; padding: 14px 22px; border-radius: 999px; cursor: pointer; font-size: 16px; font-weight: bold; }
+    .cta:hover { opacity: 0.9; }
+    .card { margin-top: 20px; background: white; padding: 20px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,.07); display: none; }
+    .card.revealed { display: block; animation: fadeIn .6s ease both; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    .big-heart { font-size: 38px; margin: 0 10px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 20px; }
+    .gallery img { width: 100%; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>For Fatima ❤️</h1>
+      <h3>From Wahab</h3>
+    </header>
+
+    <main>
+      <p>I made this little page to share something from my heart.</p>
+      <button id="revealBtn" class="cta" type="button">Click to see my heart</button>
+
+      <div id="messageCard" class="card">
+        <div class="names">
+          <span>Wahab</span>
+          <span class="big-heart">❤️</span>
+          <span>Fatima</span>
+        </div>
+        <p>
+          Fatima, when I think about my favorite moments, they always have you in them. You’ve been the brightest part of my days, the reason behind my smiles, and the calm in my storms.  
+          <br><br>
+          I love you not just for who you are, but for who I become when I’m with you — someone braver, happier, and more alive. You’ve shown me the meaning of kindness, patience, and unconditional love, and I can’t imagine my future without you in it.  
+          <br><br>
+          I want to be there for every laugh, every tear, every late-night conversation, and every new adventure. Whether we’re walking under the stars or simply sitting in silence, your presence is all I need.  
+          <br><br>
+          Fatima, I love you deeply, endlessly, and truly. And I promise that as long as I live, my heart will always belong to you.  
+          <br><br>
+          Love forever,  
+          <br>
+          Wahab
+        </p>
+        <div class="gallery">
+          <img src="https://picsum.photos/400/300?random=1" alt="Memory 1">
+          <img src="https://picsum.photos/400/300?random=2" alt="Memory 2">
+          <img src="https://picsum.photos/400/300?random=3" alt="Memory 3">
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Made with ❤ by Wahab
+    </footer>
+  </div>
+
+  <script>
+    const revealBtn = document.getElementById('revealBtn');
+    const messageCard = document.getElementById('messageCard');
+    revealBtn.addEventListener('click', () => {
+      messageCard.classList.add('revealed');
+      revealBtn.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
